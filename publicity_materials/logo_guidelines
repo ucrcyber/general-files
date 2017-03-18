@@ -1,0 +1,18 @@
+The Logo depicts a "glider" construct from Conway's Game of Life. The rationale
+for the use of this logo can be found here:
+http://www.catb.org/hacker-emblem/
+
+The logo appears intermittently in "hacker culture," most notably (to us) on the
+cover of the Red Team Field Manual, but also in other places.
+
+The text below, "cyber@ucr~$" is meant to emulate a standard terminal prompt
+in Debian. Debian is chosen because it is the basis of the "Kali Linux" general
+penetration testing suite.
+
+The green color is meant to emulate the color of terminals that were displayed
+in old CRT monitors. The slight blur is also intentional, and is also meant
+to emulate the "glow" effect of old terminal windows.
+
+(Other guidelines describing more specific things about size and such can be
+added here later if future leadership desires, but I thought it'd be good to
+drop in the reasons for the original logo.)
