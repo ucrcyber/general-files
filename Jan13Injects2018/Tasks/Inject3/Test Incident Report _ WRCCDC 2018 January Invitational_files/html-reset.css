@@ -1,0 +1,189 @@
+/* $Id: html-reset.css,v 1.1 2010/07/12 23:05:43 aross Exp $ */ 
+
+/**
+ * @file
+ * HTML Element Styling
+ *
+ * This is the place where you should set (not reset) the default styling for all
+ * HTML elements.
+ *
+ * @see http://meiert.com/en/blog/20080419/reset-style-sheets-are-bad/
+ * @see http://snook.ca/archives/html_and_css/no_css_reset/
+ */
+
+
+/** ---------------------------- FONTS ------------------------------------ **/
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset  {
+  font-family: Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+}
+
+body {
+  font-size: 100%; /* Fixes exaggerated text resizing in IE6 and IE7 */
+}
+
+#page {
+  /* Use a 12px base font size with a 16px line height */
+  font-size: 0.75em; 
+  line-height: 1.333em; 
+}
+
+/** ---------------------------- HEADINGS ------------------------------------ **/
+
+h1 {
+  font-size: 160%;
+}
+
+h2 {
+  font-size: 140%;
+}
+
+h3 {
+  font-size: 130%;
+}
+
+h4 {
+  font-size: 120%;
+}
+
+h5 {
+  font-size: 110%;
+}
+
+/** ----------------------------- LISTS ---------------------------------- **/
+
+ul,
+ol {
+  margin-left: 0;
+  padding-left: 2em; /* LTR */
+}
+
+.block ul,
+.item-list ul /* Drupal overrides */ {
+  margin: 1em 0;
+  padding: 0 0 0 2em; /* LTR */
+}
+
+ul ul, ul ol,
+ol ol, ol ul,
+.block ul ul, .block ul ol,
+.block ol ol, .block ol ul,
+.item-list ul ul, .item-list ul ol,
+.item-list ol ol, .item-list ol ul {
+  margin: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.item-list ul li /* Drupal override */ {
+  margin: 0;
+  padding: 0;
+  list-style: inherit;
+}
+
+ul.menu li,
+li.expanded,
+li.collapsed,
+li.leaf /* Drupal override */ {
+  margin: 0;
+  padding: 0;
+}
+
+ul          { list-style-type: disc; }
+ul ul       { list-style-type: circle; }
+ul ul ul    { list-style-type: square; }
+ul ul ul ul { list-style-type: circle; }
+ol          { list-style-type: decimal; }
+ol ol       { list-style-type: lower-alpha; }
+ol ol ol    { list-style-type: decimal; }
+
+dt {
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 0 2em;
+  padding: 0;
+}
+
+/** ----------------------------- LINKS ---------------------------------- **/
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/** ----------------------------- TABLES ---------------------------------- **/
+
+table  {
+  border-collapse: collapse;
+  width: 100%; 
+  margin-bottom:15px;  
+}
+
+th,
+thead th,
+tbody th {
+  text-align: left;
+  padding-right: 0;
+  border-bottom: none;
+}
+
+tbody {
+  border-top: none;
+}
+
+thead th {
+  background: #DDD;
+  border: 1px solid #cccccc;
+  padding: 6px 5px;
+}
+
+tr.odd td, tr.even td {
+  padding:8px 5px;
+  border:1px solid #cccccc;
+}
+
+tr.odd td { background:#FFFFFF; }
+
+tr.even td { background:#F2F2F2; }
+
+
+
+/** ----------------------------- ABBREVIATIONS ---------------------------------- **/
+abbr {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+  white-space: nowrap;
+}
+
+abbr.created /* Date-based "abbreviations" show computer-friendly timestamps which are not human-friendly. */ {
+  border: none;
+  cursor: auto;
+  white-space: normal;
+}
+
+/** ----------------------------- IMAGES ---------------------------------- **/
+
+img {
+  border: 0;
+}
+
+/** ----------------------------- FORMS ---------------------------------- **/
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 1em 0;
+  padding: 0.5em;
+}

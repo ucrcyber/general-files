@@ -1,0 +1,152 @@
+/* $Id: cti-flex.css,v 1.3 2010/10/18 17:39:56 aross Exp $ */ 
+
+/**
+ * @file
+ * This file includes the default colors and anything that doesn't
+ * logically fit in any of the other stylesheets
+ */
+
+/** --------------------- DEFAULT GRAY COLOR SCHEME ----------------------- **/
+/** - Styles/images for other color schemes are in the "colors" directory - **/
+
+body {
+  background-color: #e7e7e7;
+  color: #323232;
+}
+
+a {
+  color: #0040B8;
+}
+
+#page {
+  background-color: #fff;
+}
+
+#header-inner,
+#footer {
+  background-color: #bbb;
+}
+
+#navigation {
+  background-color: #888;
+}
+
+#suckerfishmenu	 {
+  background-color: #888;
+}
+
+#suckerfishmenu a,
+#suckerfishmenu ul.menu li ul a {
+  color: #fff;
+}
+
+#suckerfishmenu ul.menu li ul a {
+  background-color: #888;
+}
+
+.sidebar .block h2.title a {
+  color: #fff;
+}
+
+.sidebar .block h2.title,
+#content .block h2.title {
+  color: #fff;
+  padding: 4px 10px;
+  -moz-border-radius-topleft: 7px;
+  -moz-border-radius-topright: 7px;
+  -webkit-border-top-left-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  border: 1px solid #888;
+  background-color: #888;
+}
+
+.sidebar .block .content,
+#content .block .content {
+  margin: 0;
+  -moz-border-radius-bottomleft: 7px;
+  -moz-border-radius-bottomright: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  border-top: none;
+  background-color: #e7e7e7;
+  border: 1px solid #e7e7e7;
+  padding: 10px;
+}
+
+.region-sidebar-first .no-header .content {
+  -moz-border-radius-topleft: 7px;
+  -moz-border-radius-topright: 7px;
+  -webkit-border-top-left-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+}
+
+#mission {
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  background-color: #e7e7e7;
+  border: 1px solid #e7e7e7;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.comment {
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border: 1px solid #D6D6D6;
+}
+  
+/** ----------------------- FORUMS ---------------------------------------- **/
+
+.node-type-forum h3.title {
+  font-size: 150%;
+  margin: 15px 0px 0px 0px;
+  padding-left: 0px;
+}
+
+.node-type-forum .submitted {
+  font-size: 90%;
+  color: #666;
+}
+
+.node-type-forum .content {
+  margin-top: 10px;
+}
+
+.forum-topic-navigation {
+  clear: both;
+  margin-top: 15px;
+}
+
+#forum ul.links {
+  margin-top: 15px;
+}
+
+#forum li.forum {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+#forum tr td.forum {
+  background-image: none;
+}
+
+td.forum .name {
+  font-size: 110%;
+}
+
+td.forum .name a {
+  font-weight: bold;
+}
+
+/** -------------------------- MISC -------------------------------- **/
+
+/* Aggregator, blog, and forum more link */
+.more-link {
+  text-align: right;
+}
+
+
+
+
+

@@ -1,0 +1,37 @@
+/* $Id: comments.css,v 1.2 2010/10/18 17:39:00 aross Exp $ */ 
+
+/**
+ * @file
+ * Comment Styling
+ */
+
+#comments   {
+  clear: both;
+  margin: 20px 0;
+}
+
+#comments h2.title {
+  background-color: #ddd;
+  padding: 6px 10px;
+  margin: 5px 0 15px 0;
+}
+
+.comment {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.new {
+  color: #c00;
+}
+
+.comment div.links {
+  margin: 1em 0;
+}
+
+.comment .submitted {
+  clear: left;
+}
+
+

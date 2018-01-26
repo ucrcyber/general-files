@@ -1,0 +1,208 @@
+/* $Id: pages.css,v 1.2 2010/08/02 19:43:24 aross Exp $ */ 
+
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+
+
+/** ------------------------------- BODY -------------------------------- **/
+
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+/** ------------------------------- HEADER -------------------------------- **/
+
+#header .section {
+  padding: 10px;
+}
+
+#logo-title {
+  float: left;
+  margin: 5px 0 0 20px;
+}
+
+#logo   {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+#title-slogan {
+  float: left;
+  margin-bottom: 10px;
+  line-height: 0;
+}
+
+h1#site-name {
+  margin: 0;
+  font-size: 2.6em;
+  padding: 0;
+  line-height: 1em;
+}
+
+.no-slogan h1#site-name {
+  margin-top: 10px;
+}
+
+#site-name a:link,
+#site-name a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+#site-name a:hover {
+  text-decoration: underline;
+}
+
+#site-slogan   {
+  margin: 12px 0 5px 0;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+
+/** ------------------------------- MAIN -------------------------------- **/
+
+.breadcrumb {
+  padding-bottom: 0; /* Undo system.css */
+  font-size: 95%;
+  margin-bottom: 5px;
+  color: #888;
+}
+
+.breadcrumb a {
+  color: #888;
+}
+
+h1.title, /* The title of the page */
+h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
+h3.title /* Comment title */ {
+  margin: 0;
+}
+
+h1.title {
+  margin-bottom: 10px;
+}
+
+.help /* Help text on a page */ {
+  margin: 1em 0;
+}
+
+.more-help-link /* Link to more help */ {
+  font-size: 0.85em;
+  text-align: right;
+}
+
+ul.links /* List of links */ {
+  margin: 1em 0;
+  padding: 0;
+}
+
+ul.links.inline {
+  margin: 0;
+  display: inline;
+}
+
+ul.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 0.5em;
+}
+
+.pager /* A list of page numbers when more than 1 page of content is available */ {
+  clear: both;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.pager a,
+.pager strong.pager-current /* Each page number in the pager list */ {
+  padding: 0.5em;
+}
+
+.feed-icons /* The links to the RSS or Atom feeds for the current list of content */ {
+  margin: 1em 0;
+}
+
+.more-link /* Aggregator, blog, and forum more link */ {
+  text-align: right; /* LTR */
+}
+
+.region-content-bottom /* Wrapper for any blocks placed in the "content bottom" region */ {
+}
+
+
+/** ------------------------------- FOOTERS -------------------------------- **/
+
+#footer .section {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+#footer-message {
+  margin-bottom: 10px;
+}
+/** ------------------------------- CLOSURE -------------------------------- **/
+
+.region-page-closure /* Wrapper for any blocks placed in the closure region */ {
+}
+
+
+/** ------------------------------- BOXES -------------------------------- **/
+
+.box /* Wrapper for box */ {
+}
+
+.box h2 /* Box title */ {
+}
+
+.box .content /* Box's content wrapper */ {
+}
+
+
+/** ------------------------------- MISC -------------------------------- **/
+
+/*
+ * Markup free clearing (See: http://www.positioniseverything.net/easyclearing.html )
+ */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/**
+ * Hide elements from all users.
+ *
+ * Used for elements which should not be immediately displayed to any user. An
+ * example would be a collapsible fieldset that will be expanded with a click
+ * from a user. The effect of this class can be toggled with the jQuery show()
+ * and hide() functions.
+ */
+.element-hidden {
+  display: none;
+}
+
+/**
+ * Hide elements visually, but keep them available for screen-readers.
+ *
+ * Used for information required for screen-reader users to understand and use
+ * the site where visual display is undesirable. Information provided in this
+ * manner should be kept concise, to avoid unnecessary burden on the user. Must
+ * not be used for focusable elements (such as links and form elements) as this
+ * causes issues for keyboard only or voice recognition users. "!important" is
+ * used to prevent unintentional overrides.
+ */
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}

@@ -1,0 +1,13 @@
+/* $Id: local.css,v 1.1 2010/07/12 23:05:43 aross Exp $ */ 
+
+/**
+ * @file
+ * For users to customize theme
+ *
+ * This file will be loaded after the other theme stylesheets so use it to make 
+ * your own customizations and it will override other settings.
+ *
+ * IMPORTANT - when upgrading the theme, save a copy of this file and then
+ * paste back into the new local.css after the upgrade to keep your customizations
+ * 
+ */
