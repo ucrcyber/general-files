@@ -1,0 +1,65 @@
+/* $Id: blocks.css,v 1.1 2010/07/12 23:05:43 aross Exp $ */ 
+
+/**
+ * @file
+ * Block Styling
+ */
+
+
+.block /* Block wrapper */ {
+  margin-bottom: 1em;
+}
+
+.block {
+  border: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.block ul {
+  margin-top: 0px;
+  margin-left: 15px;
+  padding-left: 0;
+}
+
+.block ul li {
+  margin-bottom: 4px;
+}
+
+.block ul li.expanded ul {
+  margin-top: 4px;
+  margin-left: 20px;
+}
+
+.block h2.title {
+  font-size: 110%;
+  padding: 2px 10px;
+}
+
+#content .block {
+  margin-top: 20px;
+}
+
+/** -------------------- CUSTOM BULLETS IN BLOCKS ------------------------- **/
+
+.block ul li {
+  list-style-type: circle;
+  list-style-image: url(../images/menu-leaf2.png);
+}
+
+.block ul li.collapsed {
+  list-style-image: url(../images/menu-collapsed-rtl.png);
+}
+
+.block ul li.expanded {
+  list-style-image: url(../images/menu-expanded.png);
+}
+
+.block ul li.collapsed {
+  list-style-image: url(../images/menu-collapsed.png); /* LTR */
+}
+
+.block ul li.leaf {
+  list-style-image: url(../images/menu-leaf2.png);
+}
+

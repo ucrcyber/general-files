@@ -1,0 +1,213 @@
+/* $Id: blue.css,v 1.4 2010/10/18 17:40:33 aross Exp $ */
+
+/**
+ * @file
+ * Blue and green custom color scheme
+ */
+
+/** ------------------------- HTML ELEMENTS ------------------------------- **/
+
+body {
+  background-image: url(images/blue/body_bg.gif);
+  color: #323232;
+}
+
+a {
+  color: #0048BB;
+}
+
+#page {
+  border: 1px solid #bbb;
+  background-color: #fff;
+}
+
+/** ------------------------------ HEADER --------------------------------- **/
+
+#header .section {
+  background: #A0BAE1 url(images/blue/header_bg.gif) top left repeat-x;
+}
+
+#site-name a:link,
+#site-name a:visited {
+  color: #034695;
+}
+
+#site-slogan   {
+  color: #1A8D00;
+}
+
+#secondary,
+#secondary a {
+  color: #1A8D00;
+}
+
+/* Suckerfish menus (primary links in top nav) */
+
+#navigation{
+  background: #0e3d8a url(images/blue/primary_bg.gif) top left repeat-x;
+  border-top: 1px solid #194B9D;
+  border-bottom: 3px solid #1c9201;
+}
+
+#suckerfishmenu a {
+  color: #fff;
+}
+
+#suckerfishmenu a.active,
+#suckerfishmenu a:hover {
+  color: #5FC202;
+  text-decoration: none;
+}
+
+#suckerfishmenu ul.menu li ul a {
+  color: #fff;
+  background-color: #4880B9;
+  border: 1px solid #8FAEE1;
+  border-top: 0px;
+}
+
+#suckerfishmenu ul.menu li ul a:hover {
+  background-color: #0E4B91;
+}
+
+#suckerfishmenu ul.menu ul {
+  border-top: 1px solid #8FAEE1;
+}
+
+/** ----------------------------- FOOTER ---------------------------------- **/
+
+#footer {
+  background-color: #054793;
+  border-top: 1px solid #194B9D;
+  color: #fff;
+}
+
+/** ------------------------------- NODES --------------------------------- **/
+
+.node-links ul.links li a,
+.node .terms ul.links.inline li a {
+  color: #47841E;
+}
+
+/** ----------------------------- BLOCKS ---------------------------------- **/
+
+.region-sidebar-first .block h2.title {
+  background: #0e3d8a url(images/blue/primary_bg.gif) top left repeat-x;
+  border: 1px solid #194B9D;
+}
+
+.region-sidebar-first .block .content {
+  background-color: #EDEDED;
+  border: 1px solid #DEDEDE;
+}
+
+/* Clear styling to remove header on center and right blocks */
+
+.region-sidebar-second .block .content,
+#content .block .content {
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.region-sidebar-second .block h2.title,
+#content .block h2.title {
+  padding: 0 0 10px 0;
+  color: #323232;
+  background: none;
+  border: none;
+}
+
+.region-sidebar-second .block {
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  padding: 10px;
+  border: 1px solid #AFC4E7;
+  background: #afc4e7 url(images/blue/bl_block.gif) top left repeat-x;
+}
+
+.region-sidebar-second .block-2,
+.region-sidebar-second .block-4,
+.region-sidebar-second .block-6,
+.region-sidebar-second .block-8 {
+  border: 1px solid #AFDA90;
+  background: #b0d098 url(images/blue/gr_block.gif) top left repeat-x;
+}
+
+#mission,
+#content .block {
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  padding: 10px;
+  border: 1px solid #D6D6D6;
+  background: #d1d1d1 url(images/blue/block1.gif) top left repeat-x;
+}
+
+#mission {
+  font-weight: bold;
+}
+
+/** -------------------- CUSTOM BULLETS IN BLOCKS ------------------------- **/
+
+.block ul li {
+  list-style-type: circle;
+  list-style-image: url(images/blue/menu-leaf2.png);
+}
+
+.block ul li.collapsed {
+  list-style-image: url(images/blue/menu-collapsed-rtl.png);
+}
+
+.block ul li.expanded {
+  list-style-image: url(images/blue/menu-expanded.png);
+}
+
+.block ul li.collapsed {
+  list-style-image: url(images/blue/menu-collapsed.png); /* LTR */
+}
+
+.block ul li.leaf {
+  list-style-image: url(images/blue/menu-leaf2.png);
+}
+
+/** ------------------------------ TABLES ---------------------------------- **/
+
+thead th {
+  background: #B0D098;
+  border: 1px solid #8BB76A;
+}
+
+tr.odd td, tr.even td { border:1px solid #BBD89C;  }
+
+tr.odd td { background:#FFFFFF; }
+
+tr.even td { background:#EAF4E0; }
+
+/** ------------------------------- POLLS -------------------------------- **/
+
+.poll .bar {
+  background-color: #234A8E;
+}
+.poll .bar .foreground {
+  background-color: #1c9201;
+}
+
+/** ------------------------------- BUTTONS -------------------------------- **/
+
+.form-submit {
+  padding: 2px 7px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-top: 1px solid #72C47B;
+  border-right: 1px solid #00730D;
+  border-bottom: 1px solid #00730D;
+  border-left: 1px solid #72C47B;
+  color: #fff;
+  font-weight: bold;
+  background: #1C9201 url(images/blue/search.gif) top left repeat-x;
+}
+
+
+
+
+

@@ -1,0 +1,94 @@
+/* $Id: nodes.css,v 1.1 2010/07/12 23:05:43 aross Exp $ */ 
+
+/**
+ * @file
+ * Node Styling
+ */
+
+.node {
+  font-size: 110%;
+  line-height: 130%;
+}
+
+.node .node {
+  font-size: 100%;
+}
+
+.node h2.title {
+  font-size: 140%;
+}
+
+.submitted {
+  color: #888;
+  font-size: 85%;
+}
+.node .content {
+  margin: 10px 0;
+}
+
+.node-unpublished /* Unpublished nodes */ {
+  background-color: #fff4f4; 
+}
+
+.node-unpublished div.unpublished,
+.comment-unpublished div.unpublished /* The word "Unpublished" displayed underneath the content. */ {
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+.marker /* "New" or "Updated" marker for content that is new or updated for the current user */ {
+  color: #c00;
+}
+
+.node.node-unpublished .picture,
+.comment.comment-unpublished .picture {
+  position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
+}
+.preview .node /* Preview of the content before submitting new or updated content */ {
+  background-color: #ffffea; 
+}
+
+/* Special formatting for nodes in lists */
+.node .list-node h2.title {
+  font-size: 110%;
+  margin: 15px 0 5px 0;
+}
+
+/** ---------------- NODE LINKS AND TAXONOMY TERMS ----------------- **/
+
+.node ul.links {
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.node ul.links.inline {
+  display: inline;
+  float: right;
+  margin-bottom: 25px;
+}
+
+.node ul.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 7px;
+}
+
+.node-links ul.links li a {
+  font-weight: bold;
+}
+
+.node .terms {
+  font-size: 85%;
+}
+
+.node .terms ul.links.inline {
+  float: none;
+}

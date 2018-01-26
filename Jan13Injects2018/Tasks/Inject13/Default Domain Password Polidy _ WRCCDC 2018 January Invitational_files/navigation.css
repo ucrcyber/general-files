@@ -1,0 +1,130 @@
+/* $Id: navigation.css,v 1.1 2010/07/12 23:05:43 aross Exp $ */ 
+
+/**
+ * @file
+ * Navigation Styling
+ */
+
+/** ------------- PRIMARY LINKS (A SUCKERFISH STYLE DROPDOWN MENU) --------------- **/
+
+/* FOR MORE INFO ABOUT ANOTHER SON OF SUCKERFISH...
+http://www.htmldog.com/articles/suckerfish/dropdowns/
+http://www.alistapart.com/articles/horizdropdowns
+*/
+
+#suckerfishmenu {
+  line-height: 32px;
+  padding-left: 10px;
+}
+
+#suckerfishmenu ul.menu { /* top level ul */
+  padding: 0 0 0 0px;
+  margin: 0;
+  list-style: none;
+  z-index: 3;
+  display: inline;
+} 
+
+#suckerfishmenu a {
+  display: block;
+  padding: 0px 14px 0px 14px; /* padding between menu elements */
+  text-decoration: none;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+#suckerfishmenu a:hover {
+  text-decoration: underline;
+}
+
+#suckerfishmenu li {
+  display: inline;
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 1%;
+}
+
+/* SECOND LEVEL LISTS */
+
+#suckerfishmenu ul.menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid #fff;
+}
+
+#suckerfishmenu ul.menu li ul {
+  position: absolute;
+  width: 200px;
+  left: -999em; /* to hide menus */
+}
+
+#suckerfishmenu ul.menu li li {
+  /* height: auto; */
+  float: left;
+  width: 200px;
+}
+
+#suckerfishmenu ul.menu li li a:link,
+#suckerfishmenu ul.menu li li a:visited {
+  width: 170px;
+}
+
+#suckerfishmenu ul.menu li ul a {
+  width: 200px;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 95%;
+  border: 1px solid #fff;
+  border-top: none;
+}
+
+/* margin for pullouts */
+#suckerfishmenu ul.menu li ul ul {
+  margin: -25px 0px 0px 199px;
+}
+
+#suckerfishmenu ul.menu li:hover ul ul, 
+#suckerfishmenu ul.menu li:hover ul ul ul, 
+#suckerfishmenu ul.menu li.sfhover ul ul, 
+#suckerfishmenu ul.menu li.sfhover ul ul ul {
+  left: -999em;
+}
+
+#suckerfishmenu ul.menu li:hover ul, 
+#suckerfishmenu ul.menu li li:hover ul, 
+#suckerfishmenu ul.menu li li li:hover ul, 
+#suckerfishmenu ul.menu li.sfhover ul, 
+#suckerfishmenu ul.menu li li.sfhover ul, 
+#suckerfishmenu ul.menu li li li.sfhover ul {
+  left: auto;
+}
+
+
+/** ------------------------- SECONDARY LINKS ----------------------------------- **/
+
+#secondary {
+  float: right;
+}
+
+#secondary ul {
+  margin: 0;
+}
+
+#secondary,
+#secondary a {
+  font-weight: bold;
+}
+
+#secondary ul.links li { 
+  padding:0 5px 0 10px; 
+  margin: 0;
+}
+
+#secondary ul.links li.first { 
+  padding:0 5px 0 6px; 
+}
+
+
+
